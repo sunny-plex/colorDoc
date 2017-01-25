@@ -54,7 +54,7 @@
 
         fn.loadLessVarable = function () {
             $http({
-                "url": fn.config.colorDictFile
+                "url": fn.config.colorDictFilePath
             }).success(function (response, status) {
                 fn.colors = window.colorConvert.readVariable(response);
                 $scope.colors = fn.colors;
