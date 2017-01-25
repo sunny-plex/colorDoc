@@ -1,0 +1,176 @@
+ss-datepicker {
+    * {
+        font-family: microsoft yahei;
+        box-sizing: border-box;
+    }
+    .qbdatepickerRect {
+        display: inline-block;
+    }
+    .input {
+        cursor: default;
+    }
+    .inputPickerIconRect{
+        display:inline-block;
+        padding-right:23px;
+        background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsKQGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiBpZm9udDsgc3JjOiB1cmwoIi8vYXQuYWxpY2RuLmNvbS90L2ZvbnRfMTQ0MjM3Mzg5Nl80NzU0NDU1LmVvdD8jaWVmaXgiKSBmb3JtYXQoImVtYmVkZGVkLW9wZW50eXBlIiksIHVybCgiLy9hdC5hbGljZG4uY29tL3QvZm9udF8xNDQyMzczODk2XzQ3NTQ0NTUud29mZiIpIGZvcm1hdCgid29mZiIpLCB1cmwoIi8vYXQuYWxpY2RuLmNvbS90L2ZvbnRfMTQ0MjM3Mzg5Nl80NzU0NDU1LnR0ZiIpIGZvcm1hdCgidHJ1ZXR5cGUiKSwgdXJsKCIvL2F0LmFsaWNkbi5jb20vdC9mb250XzE0NDIzNzM4OTZfNDc1NDQ1NS5zdmcjaWZvbnQiKSBmb3JtYXQoInN2ZyIpOyB9CgpdXT48L3N0eWxlPjwvZGVmcz48ZyBjbGFzcz0idHJhbnNmb3JtLWdyb3VwIj48ZyB0cmFuc2Zvcm09InNjYWxlKDAuMTk1MzEyNSwgMC4xOTUzMTI1KSI+PHBhdGggZD0iTTMwMy44Njk1MDEgNTI5LjY2MTc5OCAyMjIuNzQyMTMyIDUyOS42NjE3OThjLTEzLjE4ODc3IDAtMjMuOTc4NzktMTAuNzkwMDItMjMuOTc4NzktMjMuOTc4NzlsMC04MC45OTM3MThjMC0xMy4xODg3NyAxMC43OTAwMi0yMy45Nzg3OSAyMy45Nzg3OS0yMy45Nzg3OUwzMDMuODY5NTAxIDQwMC43MTA1YzEzLjE4ODc3IDAgMjMuOTc4NzkgMTAuNzkwMDIgMjMuOTc4NzkgMjMuOTc4NzlsMCA4MC45OTM3MThDMzI3Ljg0ODI5MSA1MTkuMDA0NTU4IDMxNy4wNTgyNzEgNTI5LjY2MTc5OCAzMDMuODY5NTAxIDUyOS42NjE3OTh6TTQ5OC43NjI5MDcgNDAwLjcxMDkzNWwtODAuOTk0NTg5IDBjLTEzLjE4NzQ2NCAwLTIzLjk3ODc5IDEwLjc5MDAyLTIzLjk3ODc5IDIzLjk3ODc5bDAgODAuOTkzNzE4YzAgMTMuMTg4NzcgMTAuNzkwODkxIDIzLjk3ODc5IDIzLjk3ODc5IDIzLjk3ODc5bDgwLjk5NDU4OSAwYzEzLjE4ODc3IDAgMjMuOTc4NzktMTAuNzkwMDIgMjMuOTc4NzktMjMuOTc4NzlsMC04MC45OTM3MThDNTIyLjc0MTY5NyA0MTEuMzY4MTc1IDUxMS45NTE2NzcgNDAwLjcxMDkzNSA0OTguNzYyOTA3IDQwMC43MTA5MzV6TTY5My42NTc2MTkgNDAwLjcxMDkzNWwtODAuOTk1ODk1IDBjLTEzLjE4NjU5MyAwLTIzLjk3ODc5IDEwLjc5MDAyLTIzLjk3ODc5IDIzLjk3ODc5bDAgODAuOTkzNzE4YzAgMTMuMTg4NzcgMTAuNzkyMTk3IDIzLjk3ODc5IDIzLjk3ODc5IDIzLjk3ODc5bDgwLjk5NTg5NSAwYzEzLjE4NjU5MyAwIDIzLjk3ODc5LTEwLjc5MDAyIDIzLjk3ODc5LTIzLjk3ODc5bDAtODAuOTkzNzE4QzcxNy42MzY0MDkgNDExLjM2ODE3NSA3MDYuOTc5MTY5IDQwMC43MTA5MzUgNjkzLjY1NzYxOSA0MDAuNzEwOTM1ek0zMDMuODY5NTAxIDU4OS4wNzU0NzYgMjIyLjc0MjEzMiA1ODkuMDc1NDc2Yy0xMy4xODg3NyAwLTIzLjk3ODc5IDEwLjc5MjE5Ny0yMy45Nzg3OSAyMy45Nzg3OWwwIDgwLjk5NTg5NWMwIDEzLjE4ODc3IDEwLjc5MDAyIDIzLjk3ODc5IDIzLjk3ODc5IDIzLjk3ODc5TDMwMy44Njk1MDEgNzE4LjAyODk1YzEzLjE4ODc3IDAgMjMuOTc4NzktMTAuNzkwMDIgMjMuOTc4NzktMjMuOTc4NzlsMC04MC45OTU4OTVDMzI3Ljg0ODI5MSA1OTkuNzMyNzE2IDMxNy4wNTgyNzEgNTg5LjA3NTQ3NiAzMDMuODY5NTAxIDU4OS4wNzU0NzZ6TTQ5OC43NjI5MDcgNTg5LjA3NTQ3NmwtODAuOTk0NTg5IDBjLTEzLjE4NzQ2NCAwLTIzLjk3ODc5IDEwLjc5MjE5Ny0yMy45Nzg3OSAyMy45Nzg3OWwwIDgwLjk5NTg5NWMwIDEzLjE4ODc3IDEwLjc5MDg5MSAyMy45Nzg3OSAyMy45Nzg3OSAyMy45Nzg3OWw4MC45OTQ1ODkgMGMxMy4xODg3NyAwIDIzLjk3ODc5LTEwLjc5MDAyIDIzLjk3ODc5LTIzLjk3ODc5bDAtODAuOTk1ODk1QzUyMi43NDE2OTcgNTk5LjczMjcxNiA1MTEuOTUxNjc3IDU4OS4wNzU0NzYgNDk4Ljc2MjkwNyA1ODkuMDc1NDc2ek02OTMuNjU3NjE5IDU4OS4wNzU0NzZsLTgwLjk5NTg5NSAwYy0xMy4xODY1OTMgMC0yMy45Nzg3OSAxMC43OTIxOTctMjMuOTc4NzkgMjMuOTc4NzlsMCA4MC45OTU4OTVjMCAxMy4xODg3NyAxMC43OTIxOTcgMjMuOTc4NzkgMjMuOTc4NzkgMjMuOTc4NzlsODAuOTk1ODk1IDBjMTMuMTg2NTkzIDAgMjMuOTc4NzktMTAuNzkwMDIgMjMuOTc4NzktMjMuOTc4NzlsMC04MC45OTU4OTVDNzE3LjYzNjQwOSA1OTkuNzMyNzE2IDcwNi45NzkxNjkgNTg5LjA3NTQ3NiA2OTMuNjU3NjE5IDU4OS4wNzU0NzZ6TTc2NS43MjY3NjkgMTQwLjI3NDE5OGMwIDIxLjk4MDU1OC0xNy44NTEzMTIgMzkuODMxODctMzkuODMxODcgMzkuODMxODdzLTM5LjgyOTY5My0xNy44NTEzMTItMzkuODI5NjkzLTM5LjgzMTg3TDY4Ni4wNjUyMDYgNDAuMDk2MTQyYzAtMjEuOTgwNTU4IDE3Ljg0OTEzNi0zOS44MzA1NjQgMzkuODI5NjkzLTM5LjgzMDU2NHMzOS44MzE4NyAxNy44NTAwMDYgMzkuODMxODcgMzkuODMwNTY0TDc2NS43MjY3NjkgMTQwLjI3NDE5OHpNMjI4LjA3MDc1MiAzOS44MzA1ODFjMC0yMS45ODA1NTgtMTcuODUxMzEyLTM5LjgzMTg3LTM5LjgzMTg3LTM5LjgzMTg3cy0zOS44MzE4NyAxNy44NTEzMTItMzkuODMxODcgMzkuODMxODdsMCAxMDAuMTc2NzVjMCAyMS45ODA1NTggMTcuODUxMzEyIDM5LjgzMTg3IDM5LjgzMTg3IDM5LjgzMTg3czM5LjgzMTg3LTE3Ljg1MTMxMiAzOS44MzE4Ny0zOS44MzE4N0wyMjguMDcwNzUyIDM5LjgzMDU4MXpNODEzLjgxNzEyOSAxMzYuMTQ0OTUyIDgxMy44MTcxMjkgMTM2LjE0NDk1MmMwIDQ1LjE1OTE4NC0zMy4wMzgzMTUgODQuODU4Mjc0LTc3LjkzMTA2OCA4OS45MjEzMzMtNTIuODg1NjgzIDUuODU5NzQxLTk3LjkxMjk1Ny0zNS41Njk4NDUtOTcuOTEyOTU3LTg3LjM5MTEwOWwwLTIuNjY0MzFjMC0yMS4wNDc2MTQtMTcuMDUyNDU1LTM4LjA5OTE5OC0zOC4wOTkxOTgtMzguMDk5MTk4TDMxNC4xMjc1MyA5Ny45MTE2NjljLTIxLjA0NzYxNCAwLTM4LjA5OTE5OCAxNy4wNTExNDktMzguMDk5MTk4IDM4LjA5OTE5OGwwIDBjMCA0NS4xNjA0OS0zMy4wMzgzMTUgODQuODU2OTY3LTc3LjkzMTA2OCA4OS45MjAwMjctNTIuODg3ODYgNS44NjE5MTctOTcuOTEyOTU3LTM1LjU2NzY2OC05Ny45MTI5NTctODcuMzg4NDk3bDAgMGMwLTIyLjM3OTc2OS0xOC4xMTc3NDMtNDAuNjMwNzI4LTQwLjYzMDcyOC00MC42MzA3MjhsLTE0LjI1NTM2NSAwYy0yMi4zNzg4OTggMC00MC42MzA3MjggMTguMTE2ODczLTQwLjYzMDcyOCA0MC42MzA3MjhsMCA2NzAuODcxMDgxYzAgNDEuMjk2ODA1IDMzLjU3MTYxMiA3NC44Njg0MTcgNzQuODY4NDE3IDc0Ljg2ODQxN2w3NTIuNjY1ODM0IDBjNDEuMjk2ODA1IDAgNzQuODY1ODA1LTMzLjU3MTYxMiA3NC44NjU4MDUtNzQuODY4NDE3TDkwNy4wNjc1NDQgMTM2LjE0NDk1MmMwLTIxLjA0NzYxNC0xNy4wNTI0NTUtMzguMjMyODQ5LTM4LjIzMTk3OC0zOC4yMzI4NDlsLTE2LjkxNzQ5OCAwQzgzMS4wMDIzNjQgOTguMDQ0NDQ5IDgxMy44MTcxMjkgMTE1LjA5NjkwMyA4MTMuODE3MTI5IDEzNi4xNDQ5NTJ6TTc4MS45ODAzNjYgNzk2LjYyNTIyNSAxMzAuMDIzNzA5IDc5Ni42MjUyMjVjLTIwLjc4MjA1MyAwLTM3LjU2Njc3MS0xNi43ODQ3MTgtMzcuNTY2NzcxLTM3LjU2NTlsMC00MTIuMDM1NTQyYzAtMjAuNzgxMTgzIDE2Ljc4NDcxOC0zNy41NjU5IDM3LjU2Njc3MS0zNy41NjU5TDc4MS45NzgxODkgMzA5LjQ1Nzg4M2MyMC43ODExODMgMCAzNy41NjgwNzcgMTYuNzg0NzE4IDM3LjU2ODA3NyAzNy41NjU5bDAgNDEyLjAzNTU0MkM4MTkuNjc4NjExIDc3OS44NDA5NDIgODAyLjc1OTM3MiA3OTYuNjI1MjI1IDc4MS45ODAzNjYgNzk2LjYyNTIyNXoiIGZpbGw9IiNhOWI3YjciPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size:20px;
+        border: #697277 1px solid;
+        border-radius: 2px;
+        background-color: #3b4145;
+    }
+    .defaultDatePickerInput {
+        width: 90px;
+        height: 22px;
+        line-height: 22px;
+        cursor: default;
+        color: #fff3dd;
+        text-align: center;
+        border:none;
+        background-color: transparent;
+    }
+    .defaultDatePickerInput:focus{
+        outline:none;
+    }
+    .defaultDatePickerInput.inputable {
+        cursor: text;
+        z-index: 101;
+        position: relative;
+    }
+    .globalCover {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 99;
+    }
+    .qbdatepicker {
+        position: absolute;
+        z-index: 100;
+        width: 220px;
+        min-height: 217px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
+        background-color: #232628;
+        .pickerHeader1 {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .pickerHeader2 {
+            width: 100%;
+            height: 28px;
+            clear: both;
+            * {
+                cursor: default;
+            }
+            .days {
+                width: 30px;
+                text-align: center;
+                line-height: 26px;
+                color: #959b9f;
+                display: inline-block;
+                font-size: 12px;
+                margin-top: 1px;
+                margin-right: 1px;
+            }
+            .days:nth-child(1) {
+                margin-left: 1px;
+            }
+        }
+        .headBox1 {
+            width: 70px;
+            height: 24px;
+            background-color: #3b4145;
+            border-radius: 2px;
+            float: left;
+            input {
+                width: 38px;
+                height: 18px;
+                margin-top: 3px;
+                margin-left: 8px;
+                border: none;
+                background-color: transparent;
+                float: left;
+                font-size: 14px;
+                color: #ffda9a;
+            }
+        }
+        .ml_5 {
+            margin-left: 5px;
+        }
+        .ml_15 {
+            margin-left: 15px;
+        }
+        .headerLabel {
+            float: left;
+            margin-left: 5px;
+            margin-top: 3px;
+            font-size: 12px;
+            color: #959b9f;
+            cursor: default;
+        }
+        dl {
+            width: 15px;
+            height: 20px;
+            margin: 2px 0 0 4px;
+            display: inline-block;
+            float: left;
+            * {
+                margin: 0;
+            }
+            .datepicker_arrow {
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAYAAAAWo42rAAAAAXNSR0IArs4c6QAAAJRJREFUKBVjYEAC////Z/v/69NMMAaykaQQzP//v0r+//3p2P9fH/+DMYgNFEOoALKACiyB+BkQ//z/63MaGIPYEDFLsGKsglg0M0GNPs7AwmzMyMp3HMpnALOBYkA+XAwmN2hpqK/3Y4QZ0MXQsN0PUgPztRXDn79nQeEJ8xGYDRQD8q1gYsQFOEw1UVGIUIw7UQAAg+W95ZWtROYAAAAASUVORK5CYII=);
+            }
+            dd.plus {
+                width: 100%;
+                height: 50%;
+                background-repeat: no-repeat;
+                background-position: center 3px;
+                border-top-left-radius: 2px;
+                border-top-right-radius: 2px;
+            }
+            dd.plus:hover {
+                background-color: #161819;
+            }
+            dd.reduce {
+                width: 100%;
+                height: 50%;
+                background-repeat: no-repeat;
+                background-position: center -7px;
+                border-bottom-left-radius: 2px;
+                border-bottom-right-radius: 2px;
+            }
+            dd.reduce:hover {
+                background-color: #161819;
+            }
+        }
+        .dateCellRect {
+            .dateCell {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                display: inline-block;
+                margin-right: 1px;
+                margin-bottom: 1px;
+                font-size: 12px;
+                color: #ffebc8;
+                background-color: #1e2022;
+                cursor: default;
+            }
+            .dateCellOn {
+                background-color: #161819;
+            }
+            .dateCellOn:hover {
+                background-color: #1d4243;
+            }
+            .dateWeekend {
+                color: #f9c66e;
+            }
+        }
+    }
+}

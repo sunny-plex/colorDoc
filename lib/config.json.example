@@ -1,0 +1,11 @@
+{
+    "lessSrcPath": "./sample",
+    "lessSrcSuffix": ".less",
+    "lessEncode": "UTF-8",
+    "lessSrcIgnore": [
+        "bower_components",
+        "node_modules",
+        ".git"
+    ],
+    "colorDictFile": "./export/colorDict.less"
+}

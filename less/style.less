@@ -1,0 +1,135 @@
+body {
+    background-color: #000;
+    font-family: Microsoft YaHei;
+    color: #ffda9a;
+}
+* {
+	cursor: default;
+}
+.fl {
+    float: left;
+}
+
+.fr {
+    floar: right;
+}
+
+.pl_20px {
+    padding-left: 20px;
+}
+
+.mr_10px {
+    margin-right: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.mainrect {
+    .right_pannel {
+        position: fixed;
+        z-index: 101;
+        right: 0px;
+        top: 0px;
+        padding: 10px;
+        background-color: rgba(180, 180, 180, 0.5);
+        font-size: 12px;
+        color: #e9f0e9;
+        border-bottom-left-radius: 2px;
+        line-height: 20px;
+        .pannelBtn {
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+        .pannelBtn:hover {
+            box-shadow: 0px 0px 4px #f63;
+        }
+        .searchBox {
+        	border:none;
+        	background-color:#333638;
+        	color:#ffebc8;
+        	border-radius:2px;
+        	width:110px;
+        	line-height: 20px;
+        	text-indent:5px;
+        }
+    }
+    .container {
+        padding: 30px 50px;
+    }
+    h1 {
+        font-size:24px;
+        font-weight: normal;
+        color: #db8c1d;
+    }
+    .splitLine1 {
+        width: 100%;
+        height: 1px;
+        background-color: #767676;
+        margin: 30px 0;
+    }
+    .splitLine2 {
+        width: 100%;
+        height: 1px;
+        background-color: #5c5c5c;
+        margin: 15px 0;
+    }
+    .groupbox1 {
+        width: 100%;
+        td {
+            height: 36px;
+        }
+        .item {
+        	width: 100%;
+            color: #ffebc8;
+            font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+            margin:1px 0;
+            display: block;
+            td:nth-child(1) {
+            	min-width: 200px;
+            	width: 30%;
+            }
+            td:nth-child(2) {
+            	min-width: 360px;
+            	width: 40%;
+            }
+            td:nth-child(3) {
+            	min-width: 200px;
+            	width: 30%;
+            }
+            span {
+                color: #d0d0d0;
+                font-size: 13px;
+                display: inline-block;
+            }
+            .description {
+                color: #d0d0d0;
+            }
+            .attribute {
+                color: #d0d0d0;
+                font-size: 13px;
+                max-width: 40%
+            }
+            .itemexample {
+                margin-right: 20px;
+            }
+            .itemexample_block {
+                width: 80px;
+                height: 20px;
+                border-radius: 2px;
+                margin-top: 2px;
+            }
+        }
+        .item:hover {
+        	background-color:#179595;
+        }
+    }
+}

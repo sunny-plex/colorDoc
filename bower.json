@@ -1,0 +1,27 @@
+{
+  "name": "colorDocument",
+  "description": "",
+  "main": "node runColorDict.js",
+  "keywords": [
+    "colorDoc",
+    "colorDocument",
+    "mvc9"
+  ],
+  "authors": [
+    "mvc9.com"
+  ],
+  "license": "MIT",
+  "homepage": "colorDoc.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.2",
+    "less": "^2.7.1"
+  }
+}

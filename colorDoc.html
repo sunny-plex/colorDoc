@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="doc">
+<!-- 开启3000端口WEB服务之后访问： http://127.0.0.1:3000/app/dev_doc_colors.less.html -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QBPRIMARY - Web Style Doc</title>
+    <link rel="stylesheet/less" href="./less/style.less">
+    <script src="./bower_components/less/dist/less.min.js"></script>
+    <script src="./bower_components/angular/angular.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="mainrect" ng-controller="ctrl">
+        <div class="right_pannel">
+            <span class="fl mr_10px">搜索颜色</span>
+            <input class="searchBox fl mr_10px" ng-keyup="searchColor(this)" ng-model="colorInput" maxlength="32" />
+            <span class="fl mr_10px">文档背景色</span>
+            <span class="pannelBtn fl" style="background-color:#000" ng-click="changeDocBg($event)"></span>
+            <span class="pannelBtn fl" style="background-color:#666" ng-click="changeDocBg($event)"></span>
+            <span class="pannelBtn fl" style="background-color:#AAA" ng-click="changeDocBg($event)"></span>
+            <span class="pannelBtn fl" style="background-color:#F4E8C4" ng-click="changeDocBg($event)"></span>
+            <span class="pannelBtn fl" style="background-color:#CFE4F9" ng-click="changeDocBg($event)"></span>
+            <span class="pannelBtn fl" style="background-color:#FFF" ng-click="changeDocBg($event)"></span>
+        </div>
+        <div class="container">
+            <h1>ColorDocument - 颜色样式变量文档</h1>
+            <br />
+            <table class="groupbox1" cellpadding="0" cellspacing="0">
+                <tr class="item" ng-repeat="color in colors track by $index">
+                    <td class="pl_20px" style="width:{{(availWidth-100)*0.3}}px;min-width: 200px;text-indent:1em;">变量名：{{color.variable}}</td>
+                    <td style="width:{{(availWidth-100)*0.3}}px;min-width: 200px;"><span>色值：{{color.value}}</span></td>
+                    <td style="width:{{(availWidth-100)*0.4}}px;min-width: 320px;">
+                        <span class="fl">示例：&nbsp;&nbsp;</span>
+                        <div class="itemexample example1 fl" style="color:{{color.value}}">Microsoft Yahei Regular</div>
+                        <div class="itemexample_block fl" style="background-color:{{color.value}}"></div>
+                        <div class="clearfix"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="./lib/colorConvert.js"></script>
+    <script type="text/javascript" src="./js/docController.js"></script>
+</body>
+
+</html>
