@@ -1,3 +1,12 @@
 {
-    "colorDictFilePath": "./export/colorDict.less"
+  "encode": "UTF-8",
+  "logLevel": 1,
+  "srcPath": "./sample",
+  "srcSuffix": ".less",
+  "srcIgnore": [
+    "bower_components",
+    "node_modules",
+    ".git"
+  ],
+  "colorDictFilePath": "./export/colorDict.less"
 }
