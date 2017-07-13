@@ -1,7 +1,7 @@
 {
   "encode": "UTF-8",
   "logLevel": 1,
-  "variablePrefix": "$color",
+  "variablePrefix": "$color-dict-",
   "srcPath": "./sample",
   "srcSuffix": ".scss",
   "srcIgnore": [
