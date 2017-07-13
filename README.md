@@ -21,7 +21,7 @@
 
 >3.备份项目的文件，以便在工具处理异常时恢复;
 
->4.在命令行或git-bash中运行 node runColorDict.js
+>4.在命令行或git-bash中运行 `npm run color-to-dict`
 
 >5.在所有项目样式文件中引入字典变量文件;
 
@@ -32,6 +32,6 @@
 
 >1.更新colorDoc文件夹下的config.json中的字典路径
 
->2.运行start.js(需要安装express);
+>2.运行`npm run dict-viewer`(需要安装express);
 
 >3.打开浏览器，访问：127.0.0.1:1166/colorDoc.html
