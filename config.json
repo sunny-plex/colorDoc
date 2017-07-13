@@ -5,9 +5,12 @@
   "srcPath": "./sample",
   "srcSuffix": ".scss",
   "srcIgnore": [
+    "colordict.scss",
+    "variable.scss",
+    "node_modules"
     "bower_components",
-    "node_modules",
     ".git"
   ],
-  "colorDictFilePath": "./export/colordict.scss"
+  "colorDictFilePath": "./export/colordict.scss",  // color dict viewer path
+  "appDictFilePath": "./export/variable.scss"  // your project import path
 }
