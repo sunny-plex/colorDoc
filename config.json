@@ -3,11 +3,11 @@
   "logLevel": 1,
   "variablePrefix": "$color",
   "srcPath": "./sample",
-  "srcSuffix": ".sass",
+  "srcSuffix": ".scss",
   "srcIgnore": [
     "bower_components",
     "node_modules",
     ".git"
   ],
-  "colorDictFilePath": "./export/colordict.sass"
+  "colorDictFilePath": "./export/colordict.scss"
 }
