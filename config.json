@@ -1,12 +1,13 @@
 {
   "encode": "UTF-8",
   "logLevel": 1,
+  "variablePrefix": "$color",
   "srcPath": "./sample",
-  "srcSuffix": ".less",
+  "srcSuffix": ".sass",
   "srcIgnore": [
     "bower_components",
     "node_modules",
     ".git"
   ],
-  "colorDictFilePath": "./export/colorDict.less"
+  "colorDictFilePath": "./export/colordict.sass"
 }

@@ -1,0 +1,30 @@
+{
+  "name": "colordict",
+  "version": "1.0.0",
+  "description": "document color dict tool",
+  "main": "runColorDict.js",
+  "scripts": {
+    "test": "",
+    "color-to-dict": "node lib/autoVariableColor",
+    "dict-viewer": "node viewer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/mvc9/colorDoc"
+  },
+  "keywords": [
+    "colordocument",
+    "colordict",
+    "css",
+    "color",
+    "less",
+    "sass"
+  ],
+  "author": "mvc9",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "express": "^4.15.3",
+    "less": "^2.7.2"
+  }
+}

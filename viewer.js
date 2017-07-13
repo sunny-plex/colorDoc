@@ -4,7 +4,7 @@ var app = express();
 console.log('starting host on 127.0.0.1 ...');
 
 app.get('/\**/', function(req, res) {
-    var fileName = req.params[0];
+    var fileName = req.params[0] || 'viewer.html';
     var options = {
         root: __dirname,
         dotfiles: 'deny',
