@@ -23,7 +23,7 @@
   "author": "mvc9",
   "license": "MIT",
   "dependencies": {
-    "angular": "^1.6.5",
+    "angular": "1.5.2",
     "express": "^4.15.3",
     "less": "^2.7.2"
   }

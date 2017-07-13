@@ -52,7 +52,7 @@
             return result;
         }
 
-        fn.loadLessVarable = function () {
+        fn.loadColorVarable = function () {
             $http({
                 "url": fn.config.colorDictFilePath
             }).success(function (response, status) {
@@ -74,10 +74,9 @@
             var action = new Promise(function (resolve, reject) {
                 console.log('Init Config ...');
                 fn.getConfigFile(resolve, reject);
-            });
-            action.then(function (e) {
+            }).then(function (e) {
                 // 读取变量字典
-                fn.loadLessVarable();
+                fn.loadColorVarable();
             }).catch(function (e) {
                 console.error('load "configFilePath" faild!');
             });
